@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jual PC Gaming Ryzen 5 + GTX 1650 Super - Second Berkualitas</title>
+    <!-- Menggunakan Tailwind CSS untuk styling modern -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Menggunakan Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Menggunakan Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom Styles & Glassmorphism */
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --accent-color: #00d2ff; /* Warna cyan/biru serasi dengan RGB PC */
+            --accent-hover: #3a7bd5;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #0f0c29; /* Fallback background */
+            background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* Dark Gradient Background */
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+
+        /* Efek Latar Belakang Bergerak (Floating Blobs) */
+        .background-shapes {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .shape {
+            position: absolute;
+            filter: blur(100px);
+            opacity: 0.4;
+            animation: floatAnimation 20s infinite alternate ease-in-out;
+        }
+
+        .shape-1 {
+            top: -10%;
+            left: -10%;
+            width: 400px;
+            height: 400px;
+            background: var(--accent-color);
+            animation-delay: 0s;
+        }
+
+        .shape-2 {
+            bottom: -10%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: #9d50bb; /* Warna ungu sebagai kontras */
+            animation-delay: -5s;
+        }
+
+        @keyframes floatAnimation {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(100px, 50px) rotate(20deg); }
+        }
+
+        /* Glassmorphism Card Style */
+        .glass {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            border-radius: 20px;
+            transition: all 0.4s ease;
+        }
+
+        .glass:hover {
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 210, 255, 0.2);
+        }
+
+        /* Animations */
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+            opacity: 0;
+        }
+
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-600 { animation-delay: 0.6s; }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .floating-img {
+            animation: floating 4s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Custom Text Gradient */
+        .text-gradient {
+            background: linear-gradient(to right, var(--accent-color), #9d50bb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <!-- Latar Belakang Bergerak -->
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </div>
+
+    <!-- Navbar Sederhana -->
+    <nav class="fixed w-full z-50 glass px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold tracking-wider">
+            <span class="text-gradient">GAMING</span> PC
+        </div>
+        <div>
+            <a href="#contact" class="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-6 py-2 rounded-full font-semibold transition-all shadow-lg shadow-cyan-500/30">
+                Hubungi Penjual
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-24 pb-12 px-6" id="home">
+        <div class="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
+            <!-- Text Content -->
+            <div class="lg:w-1/2 text-center lg:text-left z-10">
+                <h1 class="text-4xl lg:text-6xl font-bold mb-6 leading-tight fade-in-up">
+                    Dominasi Game Anda.<br>
+                    <span class="text-gradient">Performa Gahar, Harga Pelajar.</span>
+                </h1>
+                <p class="text-lg text-gray-300 mb-8 fade-in-up delay-200">
+                    Siap tempur dengan Ryzen 5 3500 dan GTX 1650 Super. RAM lega 32GB untuk multitasking tanpa hambatan. Kondisi prima, siap pakai!
+                </p>
+
+                <div class="glass inline-block px-8 py-4 mb-8 fade-in-up delay-400">
+                    <span class="block text-sm text-gray-400 uppercase tracking-widest">Harga Spesial</span>
+                    <span class="text-4xl font-extrabold text-accent-color">Rp 7.000.000</span>
+                    <span class="ml-2 text-sm line-through text-gray-500">Rp 10.850.000</span>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start fade-in-up delay-600">
+                    <a href="#specs" class="px-8 py-3 glass hover:bg-white/10 transition-all rounded-full font-semibold flex items-center justify-center gap-2">
+                        <i class="fas fa-info-circle"></i> Lihat Spesifikasi
+                    </a>
+                    <a href="#gallery" class="px-8 py-3 border-2 border-accent-color text-accent-color hover:bg-accent-color hover:text-white transition-all rounded-full font-semibold flex items-center justify-center gap-2">
+                        <i class="fas fa-images"></i> Galeri Foto
+                    </a>
+                </div>
+                <p class="mt-6 text-sm text-gray-400 fade-in-up delay-600">
+                    <i class="fas fa-map-marker-alt mr-2 text-accent-color"></i> Lokasi: Cileungsi (Prioritas), Jabodetabek.
+                </p>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="lg:w-1/2 z-10 perspective-1000 fade-in-up">
+                <div class="relative floating-img group">
+                     <!-- Menggunakan gambar yang menunjukkan setup lengkap -->
+                    <img src="1.jpg" alt="PC Gaming Setup Front View" class="rounded-3xl shadow-2xl transform transition-transform duration-500 group-hover:scale-105 glass p-2 border-2 border-accent-color/30">
+                    <!-- Glow Effect behind image -->
+                    <div class="absolute inset-0 rounded-3xl bg-gradient-to-tr from-cyan-500/30 to-purple-500/30 blur-2xl -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 px-6 relative z-10">
+        <div class="container mx-auto">
+             <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-5xl font-bold mb-4"><span class="text-gradient">Galeri</span> Produk</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Tampilan nyata dari unit PC. Casing Cube Gaming dengan RGB yang elegan dan kondisi yang terawat.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Photo 1: Side/Sticker View -->
+                <div class="glass p-3 h-96 group overflow-hidden relative rounded-3xl">
+                    <img src="2.jpg" alt="PC Side View with RGB" class="w-full h-full object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 rounded-3xl">
+                        <p class="font-semibold text-white">Tampak Samping & Stiker</p>
+                    </div>
+                </div>
+                <!-- Photo 2: Front/Angle View (Using the same image from hero for consistency if needed, or reusing the other provided image) -->
+                <!-- Note: Since only 2 product images were provided, I am using them here. -->
+                 <div class="glass p-3 h-96 group overflow-hidden relative rounded-3xl">
+                    <img src="1.jpg" alt="PC Front Angle View" class="w-full h-full object-cover rounded-2xl transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 rounded-3xl">
+                        <p class="font-semibold text-white">Tampak Depan & Antena Wi-Fi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section id="specs" class="py-20 px-6 relative z-10">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-5xl font-bold mb-4">Spesifikasi <span class="text-gradient">Lengkap</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Detail jeroan yang membuat PC ini bertenaga untuk gaming dan produktivitas. Data diambil langsung dari unit.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Spec Card: Processor -->
+                <div class="glass p-6 flex items-start gap-4">
+                    <div class="bg-accent-color/20 p-4 rounded-full text-accent-color">
+                        <i class="fas fa-microchip fa-2x"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Processor (CPU)</h3>
+                        <p class="text-lg font-semibold text-white">AMD Ryzen 5 3500</p>
+                        <p class="text-sm text-gray-400">6 Cores, 6 Threads @3.59 GHz</p>
+                    </div>
+                </div>
+
+                <!-- Spec Card: Graphics -->
+                <div class="glass p-6 flex items-start gap-4">
+                    <div class="bg-purple-500/20 p-4 rounded-full text-purple-400">
+                        <i class="fas fa-gamepad fa-2x"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Graphics (GPU)</h3>
+                        <p class="text-lg font-semibold text-white">NVIDIA GeForce GTX 1650 SUPER</p>
+                        <p class="text-sm text-gray-400">GALAX 4GB GDDR6 VRAM</p>
+                    </div>
+                </div>
+
+                <!-- Spec Card: Memory -->
+                <div class="glass p-6 flex items-start gap-4">
+                    <div class="bg-green-500/20 p-4 rounded-full text-green-400">
+                        <i class="fas fa-memory fa-2x"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Memory (RAM)</h3>
+                        <p class="text-lg font-semibold text-white">32GB DDR4 (Dual Channel)</p>
+                        <p class="text-sm text-gray-400">2 x 16GB Apacer (Samsung DRAM)</p>
+                    </div>
+                </div>
+
+                <!-- Spec Card: Storage -->
+                <div class="glass p-6 flex items-start gap-4">
+                    <div class="bg-yellow-500/20 p-4 rounded-full text-yellow-400">
+                        <i class="fas fa-hdd fa-2x"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Storage (SSD)</h3>
+                        <p class="text-lg font-semibold text-white">512GB NVMe M.2</p>
+                        <p class="text-sm text-gray-400">ADATA SX6000PNP (Health 98%)</p>
+                    </div>
+                </div>
+
+                <!-- Spec Card: Motherboard -->
+                <div class="glass p-6 flex items-start gap-4">
+                    <div class="bg-red-500/20 p-4 rounded-full text-red-400">
+                        <i class="fas fa-chess-board fa-2x"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Motherboard</h3>
+                        <p class="text-lg font-semibold text-white">Gigabyte B450M S2H</p>
+                        <p class="text-sm text-gray-400">Chipset AMD B450, Socket AM4</p>
+                    </div>
+                </div>
+
+                <!-- Spec Card: Power Supply -->
+                <div class="glass p-6 flex items-start gap-4">
+                    <div class="bg-orange-500/20 p-4 rounded-full text-orange-400">
+                        <i class="fas fa-plug fa-2x"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Power Supply (PSU)</h3>
+                        <p class="text-lg font-semibold text-white">Seasonic S12III-500</p>
+                        <p class="text-sm text-gray-400">500W 80+ Bronze Certified</p>
+                    </div>
+                </div>
+
+                 <!-- Spec Card: Bonus & OS -->
+                 <div class="glass p-6 flex items-start gap-4 md:col-span-2 lg:col-span-3">
+                    <div class="bg-blue-500/20 p-4 rounded-full text-blue-400">
+                        <i class="fas fa-gift fa-2x"></i>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Casing</h3>
+                            <p class="text-white">Cube Gaming</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Koneksi (Bonus)</h3>
+                            <p class="text-white">Vention USB Wi-Fi + Bluetooth (AC600)</p>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Sistem Operasi</h3>
+                            <p class="text-white">Windows 11 Pro (25H2)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 relative z-10">
+        <div class="container mx-auto max-w-4xl">
+            <div class="glass p-8 lg:p-12 rounded-3xl text-center">
+                <h2 class="text-3xl lg:text-4xl font-bold mb-6">Tertarik? <span class="text-gradient">Hubungi Sekarang!</span></h2>
+                <p class="text-gray-300 mb-8">
+                    Silakan isi form di bawah ini untuk terhubung langsung ke WhatsApp. Jangan ragu untuk bertanya atau nego tipis.
+                    <br>
+                    <span class="font-semibold text-accent-color"><i class="fas fa-map-marker-alt mr-2"></i>Area: Cileungsi (Bogor) & Jabodetabek.</span>
+                </p>
+
+                <!-- WhatsApp Form -->
+                <form id="waForm" class="max-w-lg mx-auto flex flex-col gap-6">
+                    <div class="relative group">
+                        <i class="fas fa-user absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 group-focus-within:text-accent-color transition-colors"></i>
+                        <input type="text" id="name" placeholder="Nama Anda" required
+                            class="w-full bg-white/5 border border-glass-border rounded-xl py-4 pl-12 pr-4 focus:outline-none focus:border-accent-color transition-all text-white placeholder-gray-500">
+                    </div>
+                    
+                    <div class="relative group">
+                        <i class="fas fa-comment-alt absolute left-4 top-6 transform text-gray-400 group-focus-within:text-accent-color transition-colors"></i>
+                        <textarea id="message" rows="4" placeholder="Pesan Anda (Misal: Halo, apakah PC nya masih ada?)" required
+                            class="w-full bg-white/5 border border-glass-border rounded-xl py-4 pl-12 pr-4 focus:outline-none focus:border-accent-color transition-all text-white placeholder-gray-500 resize-none"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-xl shadow-lg shadow-green-500/30 transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3 text-lg">
+                        <i class="fab fa-whatsapp fa-lg"></i> Kirim Pesan via WhatsApp
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-gray-500 text-sm relative z-10 glass mt-12">
+        <p>© 2023 Penjualan PC Pribadi. Cileungsi, Bogor.</p>
+    </footer>
+
+    <!-- Javascript for WhatsApp Interactivity -->
+    <script>
+        document.getElementById('waForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Ambil nilai dari input
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+            
+            // Nomor WhatsApp tujuan (Format internasional tanpa '+')
+            const phoneNumber = '6281385869226';
+
+            // Buat pesan yang akan dikirim
+            const text = `Halo, nama saya *${name}*. ${message}. Saya tertarik dengan PC Gaming yang dijual.`;
+
+            // Encode pesan agar aman untuk URL
+            const encodedText = encodeURIComponent(text);
+
+            // Buat URL WhatsApp API
+            const waURL = `https://wa.me/${phoneNumber}?text=${encodedText}`;
+
+            // Buka URL di tab baru
+            window.open(waURL, '_blank');
+        });
+
+        // Simple Reveal on Scroll Animation Script
+        const revealElements = document.querySelectorAll('.glass, h2, .fade-in-up');
+
+        function reveal() {
+            for (let i = 0; i < revealElements.length; i++) {
+                let windowHeight = window.innerHeight;
+                let elementTop = revealElements[i].getBoundingClientRect().top;
+                let elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    revealElements[i].classList.add('opacity-100', 'translate-y-0');
+                    revealElements[i].classList.remove('opacity-0', 'translate-y-10');
+                }
+            }
+        }
+
+        // Add initial state for reveal animation
+        revealElements.forEach(el => {
+            if(!el.classList.contains('fade-in-up')) {
+                el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            }
+        });
+
+        window.addEventListener('scroll', reveal);
+        reveal(); // Trigger on load
+    </script>
+</body>
+</html>
